@@ -10,8 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
   <body>
-    <button id="play-pause-button">Play</button>
-<button id="replay-button">Replay</button>
+
 
 
 <div style="width: 100%;">
@@ -23,6 +22,7 @@ left: 0;">
     position: absolute;
     top: 0;
     left: 0;">
+    
       <div id="points"style="width: 100%;height: 100vh;
       position: absolute;
       top: 0;
@@ -33,11 +33,13 @@ left: 0;">
 
 
 <div class="chart-container" style="position: absolute; height:80%; width:80%;top:300">
+  <button style="z-index: 5;" onclick="window.location.reload();">replay</button>
   <canvas id="myChart"></canvas>
-    
+ 
 </div>
 </div>
-
+<button style="display: none;" id="play-pause-button">Play</button>
+<button style="display: none;" id="replay-button">Replay</button>
 
 
 <script>
